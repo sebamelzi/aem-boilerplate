@@ -110,6 +110,8 @@ async function loadLazy(doc) {
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
   import('./cme/custom-navbar.870ed14da87b882b0c1f783292f3f12b.js');
+  import('./cme/content-toggle.785ccebfcf3031805ea88b853c6eb377.js');
+  import('./cme/collapsible.253c0ec6a3ac417570a8044eb4b0a38b.js');
   import('./cme/vendor.c50054cf072d88684ad63be26c943c16.js');
   import('./cme/common.52ce1b7dcd776b2ecc275fca40301c87.js');
   import('./cme/dependencies.e420e99671686097433a87b2a109856a.js');
