@@ -67,6 +67,48 @@ export function decorateMain(main) {
   decorateBlocks(main);
 }
 
+function cmeScripts() {
+     window.authenticationOptions = window.authenticationOptions || {};
+
+    /* auth config */
+    authenticationOptions.loginProcessUrl = '\/content\/cmegroup\/en\/login\u002Dconfirmed.html';
+    authenticationOptions.loginUrl = 'https:\/\/auth.cmegroup.com\/idp\/startSSO.ping?PartnerSpId=https%3A%2F%2Fwww.cmegroup.com\x26DoNotPerformAuth=NO';
+    authenticationOptions.registerUrl = 'https:\/\/login.cmegroup.com\/sso\/register\/';
+    authenticationOptions.logoutUrl = '\/libs\/cmegroup\/security\/logout';
+    authenticationOptions.logoutProfileUrl = 'https:\/\/myprofile.cmegroup.com\/admin\/ssoflo';
+    authenticationOptions.isMobileLogin = false;
+    authenticationOptions.schemaForMobile = '';
+
+    window.globalConfig = window.globalConfig || {};
+
+    /* global config */
+    globalConfig.authorMode = false;
+    globalConfig.googleSearchUrl = '';
+    globalConfig.popularSearchUrl = '';
+    globalConfig.defaultProductTabLink = '';
+    globalConfig.socialNetworks = 'facebook,reddit,twitter,linkedin,weibo';
+    globalConfig.socialMessage = '';
+    globalConfig.myWatchlistsUrl = '\/content\/cmegroup\/en\/watchlists.html';
+    globalConfig.watchlistProductsUrl = '\/content\/cmegroup\/en\/watchlists\/details.html';
+    globalConfig.currentLanguageFolder = 'en';
+    globalConfig.subscriptionCenterUrl = '\/content\/cmegroup\/en\/subscription\u002Dcenter.html';
+    globalConfig.newSubscriptionDays = '60' || '30';
+    globalConfig.myProfileUrl = '\/content\/cmegroup\/en\/my\u002Dprofile.html';
+
+    /* page config */
+    globalConfig.isProtectedPage = false;
+    globalConfig.lockModalText = 'Log in or create an account to access premium content on cmegroup.com.';
+
+  import('https://cdn.cookielaw.org/consent/f42915b0-68e5-491a-a7f7-1db0d962ddff/OtAutoBlock.js');
+  import('https://cdn.cookielaw.org/scripttemplates/otSDKStub.js');
+  import('//cdn.evgnet.com/beacon/cmegroup/cmegroup/scripts/evergage.min.js');
+  import('https://js.clrt.ai/564.js');
+  import('//514009935.collect.igodigital.com/collect.js');
+  import('https://platform-api.sharethis.com/js/sharethis.js#property=644646a57ac381001a304496&product=sticky-share-buttons&source=platform');
+}
+
+function OptanonWrapper() { }
+
 /**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
@@ -90,6 +132,7 @@ async function loadEager(doc) {
     // do nothing
   }
   import('./cme/jquery.1fc733054ddb2e2fcd4a0f763671047b.js');
+  cmeScripts();
 }
 
 /**
