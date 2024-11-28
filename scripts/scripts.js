@@ -135,6 +135,26 @@ async function loadEager(doc) {
   cmeScripts();
 }
 
+function cmeLazyScripts() {
+
+    var ls = window.localStorage;
+var key = 'searches';
+var value = JSON.parse(ls.getItem(key));
+if (Object.keys(value || {}).indexOf('data') > -1) {
+  ls.setItem(key, JSON.stringify(value.data))
+}
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    for (let registration of registrations) {
+      if (registration.active.scriptURL.indexOf('cmegroup.com/sw.js') > -1) {
+        registration.unregister();
+      }
+    }
+  });
+}
+}
+
 /**
  * Loads everything that doesn't need to be delayed.
  * @param {Element} doc The container element
@@ -160,6 +180,7 @@ async function loadLazy(doc) {
   import('./cme/vendor.c50054cf072d88684ad63be26c943c16.js');
   import('./cme/common.52ce1b7dcd776b2ecc275fca40301c87.js');
   import('./cme/dependencies.e420e99671686097433a87b2a109856a.js');
+  cmeLazyScripts();
 }
 
 /**
