@@ -135,7 +135,7 @@ function cmeLazyScripts() {
   const script = document.createElement('script');
   script.src='https://cdn.cookielaw.org/scripttemplates/otSDKStub.js';
   script['data-domain-script'] = 'f42915b0-68e5-491a-a7f7-1db0d962ddff';
-  document.append(script);
+  document.body.append(script);
   window.OptanonWrapper = function() { };
 
   // OneTrust Cookies Consent Notice end for cmegroup.com
