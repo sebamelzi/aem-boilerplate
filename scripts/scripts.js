@@ -98,16 +98,7 @@ function cmeScripts() {
     /* page config */
     globalConfig.isProtectedPage = false;
     globalConfig.lockModalText = 'Log in or create an account to access premium content on cmegroup.com.';
-
-  import('https://cdn.cookielaw.org/consent/f42915b0-68e5-491a-a7f7-1db0d962ddff/OtAutoBlock.js');
-  import('https://cdn.cookielaw.org/scripttemplates/otSDKStub.js');
-  import('//cdn.evgnet.com/beacon/cmegroup/cmegroup/scripts/evergage.min.js');
-  import('https://js.clrt.ai/564.js');
-  import('//514009935.collect.igodigital.com/collect.js');
-  import('https://platform-api.sharethis.com/js/sharethis.js#property=644646a57ac381001a304496&product=sticky-share-buttons&source=platform');
 }
-
-function OptanonWrapper() { }
 
 /**
  * Loads everything needed to get to LCP.
@@ -136,23 +127,76 @@ async function loadEager(doc) {
 }
 
 function cmeLazyScripts() {
+  // OneTrust Cookies Consent Notice start for cmegroup.com
+  import('https://cdn.cookielaw.org/consent/f42915b0-68e5-491a-a7f7-1db0d962ddff/OtAutoBlock.js');
+  /*TODO: move to script tag
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="f42915b0-68e5-491a-a7f7-1db0d962ddff"></script>
+  */
+  const script = document.createElement('script');
+  script.src='https://cdn.cookielaw.org/scripttemplates/otSDKStub.js';
+  script['data-domain-script'] = 'f42915b0-68e5-491a-a7f7-1db0d962ddff';
+  document.append(script);
+  window.OptanonWrapper = function() { };
 
-    var ls = window.localStorage;
-var key = 'searches';
-var value = JSON.parse(ls.getItem(key));
-if (Object.keys(value || {}).indexOf('data') > -1) {
-  ls.setItem(key, JSON.stringify(value.data))
-}
+  // OneTrust Cookies Consent Notice end for cmegroup.com
+  import('//cdn.evgnet.com/beacon/cmegroup/cmegroup/scripts/evergage.min.js');
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.getRegistrations().then(function(registrations) {
-    for (let registration of registrations) {
-      if (registration.active.scriptURL.indexOf('cmegroup.com/sw.js') > -1) {
-        registration.unregister();
-      }
+  // SEO Clarity
+  import('https://js.clrt.ai/564.js');
+
+  // Begin Marketing Cloud Einstein Tag 
+  import('//514009935.collect.igodigital.com/collect.js');
+
+  // Sharethis
+  import('https://platform-api.sharethis.com/js/sharethis.js#property=644646a57ac381001a304496&product=sticky-share-buttons&source=platform');
+
+  // Google Tag Manager
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore')); j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PLCS');
+
+  // Maze DMT-21017 
+  (function (m, a, z, e) {
+  var s, t;
+  try
+
+  {     t = m.sessionStorage.getItem('maze-us');   }
+  catch (err) {}
+  
+    if (!t) {
+      t = new Date().getTime();
+      try
+  
+  {       m.sessionStorage.setItem('maze-us', t);     }
+  catch (err) {}
     }
-  });
-}
+  
+    s = a.createElement('script');
+    s.src = z + '?t=' + t + '&apiKey=' + e;
+    s.async = true;
+    a.getElementsByTagName('head')[0].appendChild(s);
+    m.mazeUniversalSnippetApiKey = e;
+  })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', '38dab2d6-19d2-4393-9831-871dcd99ab98');
+
+  
+  var ls = window.localStorage;
+  var key = 'searches';
+  var value = JSON.parse(ls.getItem(key));
+  if (Object.keys(value || {}).indexOf('data') > -1) {
+    ls.setItem(key, JSON.stringify(value.data))
+  }
+  
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for (let registration of registrations) {
+        if (registration.active.scriptURL.indexOf('cmegroup.com/sw.js') > -1) {
+          registration.unregister();
+        }
+      }
+    });
+  }
 }
 
 /**
