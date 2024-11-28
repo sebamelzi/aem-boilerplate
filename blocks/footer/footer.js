@@ -185,10 +185,6 @@ export default async function decorate(block) {
   <div class="component react language-selector" data-is-edit="false" data-links="[{&#34;linkUrl&#34;:&#34;/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;en&#34;,&#34;label&#34;:&#34;English&#34;},{&#34;linkUrl&#34;:&#34;/cn-s/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;zh_cn&#34;,&#34;label&#34;:&#34;中文(简体)&#34;},{&#34;linkUrl&#34;:&#34;/cn-t/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;zh_hk&#34;,&#34;label&#34;:&#34;中文(繁體)&#34;},{&#34;linkUrl&#34;:&#34;/ko/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;ko&#34;,&#34;label&#34;:&#34;한국어&#34;},{&#34;linkUrl&#34;:&#34;/ja/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;ja&#34;,&#34;label&#34;:&#34;日本語&#34;},{&#34;linkUrl&#34;:&#34;/pt/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;pt&#34;,&#34;label&#34;:&#34;Português&#34;},{&#34;linkUrl&#34;:&#34;/es/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;es&#34;,&#34;label&#34;:&#34;Español&#34;},{&#34;linkUrl&#34;:&#34;/de/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;de&#34;,&#34;label&#34;:&#34;Deutsch&#34;},{&#34;linkUrl&#34;:&#34;/it/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;it&#34;,&#34;label&#34;:&#34;Italiano&#34;},{&#34;linkUrl&#34;:&#34;/fr/&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:null,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;fr&#34;,&#34;label&#34;:&#34;Français&#34;}]" data-current-language="en">
 </div>
 
-  
-<link as="style" href="/etc.clientlibs/cmegroupaem/clientlibs/language-selector.c806a9a3563fd736819726caa33a4f7b.css" media="all" onload="this.onload=null;this.rel='stylesheet'" rel="preload" type="text/css">
-
-<script async="true" src="/etc.clientlibs/cmegroupaem/clientlibs/language-selector.b2ced5c1f9ac40f8e7a1fefe30bde5a8.js"></script>
 
 
 
@@ -205,27 +201,6 @@ export default async function decorate(block) {
 
     
 
-
-
-<script type="text/javascript">
-  var ls = window.localStorage;
-var key = 'searches';
-var value = JSON.parse(ls.getItem(key));
-if (Object.keys(value || {}).indexOf('data') > -1) {
-  ls.setItem(key, JSON.stringify(value.data))
-}
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.getRegistrations().then(function(registrations) {
-    for (let registration of registrations) {
-      if (registration.active.scriptURL.indexOf('cmegroup.com/sw.js') > -1) {
-        registration.unregister();
-      }
-    }
-  });
-}
-
-</script>
 
   
 
@@ -244,13 +219,6 @@ if ('serviceWorker' in navigator) {
 
   
   <div class="component react feedback-form"></div>
-
-  
-<link as="style" href="/etc.clientlibs/cmegroupaem/clientlibs/feedback-form.b7e4d41a66520ec5f7bab3a91ed5565e.css" media="all" onload="this.onload=null;this.rel='stylesheet'" rel="preload" type="text/css">
-
-<script async="true" src="/etc.clientlibs/cmegroupaem/clientlibs/feedback-form.9d433f3d15a7e2d07ac4f09d1d6cafa8.js"></script>
-
-
 
 
 
