@@ -123,6 +123,8 @@ async function loadEager(doc) {
     // do nothing
   }
   //import('./cme/jquery.1fc733054ddb2e2fcd4a0f763671047b.js');
+  import('./cme/vendor.c50054cf072d88684ad63be26c943c16.js');
+  import('./cme/common.52ce1b7dcd776b2ecc275fca40301c87.js');
   cmeScripts();
 }
 
@@ -218,8 +220,6 @@ async function loadLazy(doc) {
   import('./cme/collapsible.253c0ec6a3ac417570a8044eb4b0a38b.js');
   import('./cme/feedback-form.9d433f3d15a7e2d07ac4f09d1d6cafa8.js');
   import('./cme/language-selector.b2ced5c1f9ac40f8e7a1fefe30bde5a8.js');
-  import('./cme/vendor.c50054cf072d88684ad63be26c943c16.js');
-  import('./cme/common.52ce1b7dcd776b2ecc275fca40301c87.js');
   //import('./cme/dependencies.e420e99671686097433a87b2a109856a.js');
   cmeLazyScripts();
 }
