@@ -129,12 +129,9 @@ async function loadEager(doc) {
 function cmeLazyScripts() {
   // OneTrust Cookies Consent Notice start for cmegroup.com
   import('https://cdn.cookielaw.org/consent/f42915b0-68e5-491a-a7f7-1db0d962ddff/OtAutoBlock.js');
-  /*TODO: move to script tag
-  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="f42915b0-68e5-491a-a7f7-1db0d962ddff"></script>
-  */
   const script = document.createElement('script');
   script.src='https://cdn.cookielaw.org/scripttemplates/otSDKStub.js';
-  script['data-domain-script'] = 'f42915b0-68e5-491a-a7f7-1db0d962ddff';
+  script.dataset.domainScript = 'f42915b0-68e5-491a-a7f7-1db0d962ddff';
   document.body.append(script);
   window.OptanonWrapper = function() { };
 
