@@ -192,12 +192,6 @@ export default async function decorate(block) {
   <div class="component react collapsible" data-is-edit="false" data-title="Featured products" data-collapse-at="medium" data-list-style="product-list" data-links="[{&#34;linkUrl&#34;:&#34;/markets/agriculture/grains/corn.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;Corn&#34;,&#34;code&#34;:&#34;ZC&#34;},{&#34;linkUrl&#34;:&#34;/markets/agriculture/oilseeds/soybean.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;Soybean&#34;,&#34;code&#34;:&#34;ZS&#34;},{&#34;linkUrl&#34;:&#34;/markets/energy/crude-oil/light-sweet-crude.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;WTI Crude Oil&#34;,&#34;code&#34;:&#34;CL&#34;},{&#34;linkUrl&#34;:&#34;/markets/energy/natural-gas/natural-gas.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;Henry Hub Natural Gas&#34;,&#34;code&#34;:&#34;NG&#34;},{&#34;linkUrl&#34;:&#34;/markets/equities/sp/e-mini-sandp500.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;E-mini S&amp;P 500&#34;,&#34;code&#34;:&#34;ES&#34;},{&#34;linkUrl&#34;:&#34;/markets/equities/nasdaq/e-mini-nasdaq-100.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;E-mini NASDAQ 100&#34;,&#34;code&#34;:&#34;NQ&#34;},{&#34;linkUrl&#34;:&#34;/markets/fx/g10/euro-fx.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;Euro FX&#34;,&#34;code&#34;:&#34;6E&#34;},{&#34;linkUrl&#34;:&#34;/markets/interest-rates/us-treasury/10-year-us-treasury-note.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;10-Year T-Note&#34;,&#34;code&#34;:&#34;ZN&#34;},{&#34;linkUrl&#34;:&#34;/markets/interest-rates/stirs/three-month-sofr.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;SOFR&#34;,&#34;code&#34;:&#34;SR3&#34;},{&#34;linkUrl&#34;:&#34;/markets/metals/precious/gold.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;Gold&#34;,&#34;code&#34;:&#34;GC&#34;},{&#34;linkUrl&#34;:&#34;/markets/metals/base/copper.html&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;Copper&#34;,&#34;code&#34;:&#34;HG&#34;},{&#34;linkUrl&#34;:&#34;/markets/products.html#sortAsc&amp;sortField&#34;,&#34;linkTarget&#34;:null,&#34;linkDownload&#34;:false,&#34;linkNoFollow&#34;:null,&#34;text&#34;:&#34;All Products&#34;,&#34;code&#34;:null}]">
 </div>
 
-  
-<link as="style" href="/etc.clientlibs/cmegroupaem/clientlibs/collapsible.3919d3ac8087bdea78845d866a8dbc45.css" media="all" onload="this.onload=null;this.rel='stylesheet'" rel="preload" type="text/css">
-
-<script async="true" src="/etc.clientlibs/cmegroupaem/clientlibs/collapsible.253c0ec6a3ac417570a8044eb4b0a38b.js"></script>
-
-
 
 
 
@@ -266,10 +260,6 @@ export default async function decorate(block) {
   
 
 
-  
-<link as="style" href="/etc.clientlibs/cmegroupaem/clientlibs/content-toggle.d41d8cd98f00b204e9800998ecf8427e.css" media="all" onload="this.onload=null;this.rel='stylesheet'" rel="preload" type="text/css">
-
-<script async="true" src="/etc.clientlibs/cmegroupaem/clientlibs/content-toggle.785ccebfcf3031805ea88b853c6eb377.js"></script>
 
 
 
