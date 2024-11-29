@@ -28,6 +28,12 @@ function buildHeroBlock(main) {
   }
 }
 
+function buildDynamicAlertList(main) {
+  const section = document.createElement('div');
+  section.innerHTML = `<div><div class="component react dynamic-alert-list" data-is-edit="false" data-path="/content/cmegroup/en"></div>`;
+  main.prepend(section);
+}
+
 /**
  * load fonts.css and set a session storage flag
  */
@@ -46,6 +52,7 @@ async function loadFonts() {
  */
 function buildAutoBlocks(main) {
   try {
+    buildDynamicAlertList(main);
     buildHeroBlock(main);
   } catch (error) {
     // eslint-disable-next-line no-console
@@ -220,6 +227,7 @@ async function loadLazy(doc) {
   loadCSS(`${window.hlx.codeBasePath}/styles/cme/collapsible.3919d3ac8087bdea78845d866a8dbc45.css`);
   loadCSS(`${window.hlx.codeBasePath}/styles/cme/feedback-form.b7e4d41a66520ec5f7bab3a91ed5565e.css`);
   loadCSS(`${window.hlx.codeBasePath}/styles/cme/language-selector.c806a9a3563fd736819726caa33a4f7b.css`);
+  loadCSS(`${window.hlx.codeBasePath}/styles/cme/dynamic-alert-list.faa5b20b3e608b66780a4e431b9b541f.css`);
   loadFonts();
 
   import('./cme/custom-navbar.870ed14da87b882b0c1f783292f3f12b.js');
@@ -229,6 +237,7 @@ async function loadLazy(doc) {
   import('./cme/language-selector.b2ced5c1f9ac40f8e7a1fefe30bde5a8.js');
   import('./cme/vendor.c50054cf072d88684ad63be26c943c16.js');
   import('./cme/common.52ce1b7dcd776b2ecc275fca40301c87.js');
+  import('./cme/dynamic-alert-list.f6d92d1593c4b6af619c74760ffd28d7.js');
   //import('./cme/dependencies.e420e99671686097433a87b2a109856a.js');
   cmeLazyScripts();
 }
