@@ -30,7 +30,7 @@ function buildHeroBlock(main) {
 
 function buildDynamicAlertList(main) {
   const section = document.createElement('div');
-  section.innerHTML = `<div><div class="component react dynamic-alert-list" data-is-edit="false" data-path=en"></div>`;
+  section.innerHTML = `<div><div class="component react dynamic-alert-list" data-is-edit="false" data-path="en"></div>`;
   main.prepend(section);
 }
 
