@@ -59,7 +59,7 @@ async function loadFonts() {
 function buildAutoBlocks(main) {
   try {
     buildArticleHeader(main);
-    buildDynamicAlertList(main);
+    //buildDynamicAlertList(main);
     //buildHeroBlock(main);
   } catch (error) {
     // eslint-disable-next-line no-console
