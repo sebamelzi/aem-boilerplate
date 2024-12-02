@@ -7,7 +7,7 @@ import { loadFragment } from '../fragment/fragment.js';
  */
 export default async function decorate(block) {
   const articleHeaderHtml = `
-  <div class="component react article-header" data-header-type="standard-article" data-media-type="text-pdf" data-title="LATAM Economies: Soft Landings, Not Recessions" data-article-time="06:00" data-article-date="2024-11-14" data-article-banner-image="/content/dam/cmegroup/insights/images/2024/latam-economies-soft-landings-not-recessions-1440x500.jpg" data-article-label="CME Group Standard Article" data-ata-glance-items="[]" data-author-tags="[&#34;erik-norland&#34;]" data-aspect-ratio="16:9" data-path="/content/cmegroup/en/insights/economic-research/2024/latam-economies-soft-landings-not-recessions" data-featured-tag="Interest Rates" data-hide-right-rail="false">
+  <div class="component react article-header" data-header-type="standard-article" data-media-type="text-pdf" data-title="LATAM Economies: Soft Landings, Not Recessions" data-article-time="06:00" data-article-date="2024-11-14" data-article-banner-image="" data-article-label="CME Group Standard Article" data-ata-glance-items="[]" data-author-tags="[&#34;erik-norland&#34;]" data-aspect-ratio="16:9" data-path="/content/cmegroup/en/insights/economic-research/2024/latam-economies-soft-landings-not-recessions" data-featured-tag="Interest Rates" data-hide-right-rail="false">
   <div path="main-section">
 
   
