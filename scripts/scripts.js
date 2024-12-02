@@ -252,7 +252,7 @@ async function loadLazy(doc) {
   import('./cme/image.53044f44c89fe2885739265f6f156483.js');
   import('./cme/text.8288c3f4be088236de4d520e206a8353.js');
   //import('./cme/dependencies.e420e99671686097433a87b2a109856a.js');
-  //cmeLazyScripts();
+  cmeLazyScripts();
 }
 
 /**
